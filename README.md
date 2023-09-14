@@ -15,6 +15,11 @@ In recent years, deep learning algorithms have shown promise in medical image an
 
 - **Corruption Robustness**: The approach can effectively handle potentially corrupted input images, producing reconstruction outputs with domain-invariant anatomy.
 
+## Results
+The efficacy of unORANIC is demonstrated through extensive experimentation on various datasets. Results include evaluation of classification accuracy, corruption detection, and revision capabilities. The approach shows promise in improving the generalizability and robustness of practical applications in medical image analysis.
+
+![Results](https://github.com/sdoerrich97/unORANIC/assets/98497332/a34fdf73-672a-4499-904b-7bf82d8cc794)
+
 ## Usage
 This repository contains the implementation of unORANIC, along with resources to reproduce the results presented in the paper. The codebase is organized for clarity and ease of use, with comprehensive documentation to guide you through the process.
 
@@ -24,11 +29,6 @@ To get started with unORANIC, follow these steps:
 1. Clone this repository to your local machine.
 2. The training scripts can be found under "train", whereas the scripts responsible for the experiments presented in the paper can be found under "experiments".
 3. Each script provides comprehensive documentation to explain its usage and application.
-
-## Results
-The efficacy of unORANIC is demonstrated through extensive experimentation on various datasets. Results include evaluation of classification accuracy, corruption detection, and revision capabilities. The approach shows promise in improving the generalizability and robustness of practical applications in medical image analysis.
-
-![Results](https://github.com/sdoerrich97/unORANIC/assets/98497332/a34fdf73-672a-4499-904b-7bf82d8cc794)
 
 ## Citation
 If you find this work useful in your research, please consider citing our paper:
