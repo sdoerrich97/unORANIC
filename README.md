@@ -20,9 +20,6 @@ The efficacy of unORANIC is demonstrated through extensive experimentation on va
 
 ![Results](https://github.com/sdoerrich97/unORANIC/assets/98497332/a34fdf73-672a-4499-904b-7bf82d8cc794)
 
-## Usage
-This repository contains the implementation of unORANIC, along with resources to reproduce the results presented in the paper. The codebase is organized for clarity and ease of use, with comprehensive documentation to guide you through the process.
-
 ## Getting Started
 To get started with unORANIC, follow these steps:
 
