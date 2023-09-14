@@ -28,6 +28,8 @@ To get started with unORANIC, follow these steps:
 ## Results
 The efficacy of unORANIC is demonstrated through extensive experimentation on various datasets. Results include evaluation of classification accuracy, corruption detection, and revision capabilities. The approach shows promise in improving the generalizability and robustness of practical applications in medical image analysis.
 
+![Results](https://github.com/sdoerrich97/unORANIC/assets/98497332/a34fdf73-672a-4499-904b-7bf82d8cc794)
+
 ## Citation
 If you find this work useful in your research, please consider citing our paper:
 
