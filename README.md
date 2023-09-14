@@ -27,15 +27,16 @@ To get started with unORANIC, follow these steps:
 The efficacy of unORANIC is demonstrated through extensive experimentation on various datasets. Results include evaluation of classification accuracy, corruption detection, and revision capabilities. The approach shows promise in improving the generalizability and robustness of practical applications in medical image analysis.
 
 ## Citation
-If you find this work useful in your research, please consider citing our paper:
+If you find this work useful in your research, please consider citing our paper: [unORANIC: Unsupervised Orthogonalization of Anatomy and Image-Characteristic Features](https://arxiv.org/abs/2308.15507)
 
-@misc{doerrich2023unoranic,
-      title={unORANIC: Unsupervised Orthogonalization of Anatomy and Image-Characteristic Features}, 
-      author={Sebastian Doerrich and Francesco Di Salvo and Christian Ledig},
-      year={2023},
-      eprint={2308.15507},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
+@article{doerrich2023unoranic,
+title={unORANIC: Unsupervised Orthogonalization of Anatomy and Image-Characteristic Features}, 
+author={Sebastian Doerrich and Francesco Di Salvo and Christian Ledig},
+year={2023},
+eprint={2308.15507},
+url={https://arxiv.org/abs/2308.15507},
+archivePrefix={arXiv},
+primaryClass={eess.IV}
 }
 
 ## License
