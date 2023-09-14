@@ -28,17 +28,16 @@ The efficacy of unORANIC is demonstrated through extensive experimentation on va
 
 ## Citation
 If you find this work useful in your research, please consider citing our paper:
+
 [unORANIC: Unsupervised Orthogonalization of Anatomy and Image-Characteristic Features](https://arxiv.org/abs/2308.15507)
 
 ```
 @article{doerrich2023unoranic,
-title={unORANIC: Unsupervised Orthogonalization of Anatomy and Image-Characteristic Features}, 
-author={Sebastian Doerrich and Francesco Di Salvo and Christian Ledig},
-year={2023},
-eprint={2308.15507},
-url={https://arxiv.org/abs/2308.15507},
-archivePrefix={arXiv},
-primaryClass={eess.IV}
+   title={unORANIC: Unsupervised Orthogonalization of Anatomy and Image-Characteristic Features}, 
+   author={Sebastian Doerrich and Francesco Di Salvo and Christian Ledig},
+   year={2023},
+   eprint={2308.15507},
+   url={https://arxiv.org/abs/2308.15507},
 }
 ```
 
