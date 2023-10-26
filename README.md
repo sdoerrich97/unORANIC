@@ -29,15 +29,16 @@ To get started with unORANIC, follow these steps:
 
 ## Citation
 If you find this work useful in your research, please consider citing our paper:\
-[unORANIC: Unsupervised Orthogonalization of Anatomy and Image-Characteristic Features](https://arxiv.org/abs/2308.15507)
+[unORANIC: Unsupervised Orthogonalization of Anatomy and Image-Characteristic Features](https://link.springer.com/chapter/10.1007/978-3-031-45673-2_7)
 
 ```
-@article{doerrich2023unoranic,
-   title={unORANIC: Unsupervised Orthogonalization of Anatomy and Image-Characteristic Features}, 
-   author={Sebastian Doerrich and Francesco Di Salvo and Christian Ledig},
-   year={2023},
-   eprint={2308.15507},
-   url={https://arxiv.org/abs/2308.15507},
+@InProceedings{doerrich2023unoranic,
+   author="Doerrich, Sebastian and Di Salvo, Francesco and Ledig, Christian",
+   title="unORANIC: Unsupervised Orthogonalization of Anatomy and Image-Characteristic Features",
+   booktitle="Machine Learning in Medical Imaging",
+   year="2024",
+   pages="62--71",
+   isbn="978-3-031-45673-2"
 }
 ```
 
