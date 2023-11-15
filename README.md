@@ -28,8 +28,9 @@ To get started with unORANIC, follow these steps:
 3. Each script provides comprehensive documentation to explain its usage and application.
 
 ## Citation
-If you find this work useful in your research, please consider citing our paper:\
-[unORANIC: Unsupervised Orthogonalization of Anatomy and Image-Characteristic Features](https://link.springer.com/chapter/10.1007/978-3-031-45673-2_7)
+If you find this work useful in your research, please consider citing our paper:
+- [Publication](https://link.springer.com/chapter/10.1007/978-3-031-45673-2_7)
+- [Preprint](https://arxiv.org/abs/2308.15507)
 
 ```
 @InProceedings{doerrich2023unoranic,
@@ -39,14 +40,6 @@ If you find this work useful in your research, please consider citing our paper:
    year="2024",
    pages="62--71",
    isbn="978-3-031-45673-2"
-}
-
-@article{doerrich2023unoranic,
-      title={unORANIC: Unsupervised Orthogonalization of Anatomy and Image-Characteristic Features}, 
-      author={Sebastian Doerrich and Francesco Di Salvo and Christian Ledig},
-      year={2023},
-      eprint={2308.15507},
-      archivePrefix={arXiv}
 }
 ```
 
