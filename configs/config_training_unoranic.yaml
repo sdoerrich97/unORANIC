@@ -1,0 +1,61 @@
+# unORANIC: Unsupervised orthogonalization of anatomy and image-characteristic features
+# Parameter and hyperparameter configurations for training and inference of the unoranic model
+
+# ######################################
+# Parameter and hyperparameter configurations for training
+# ######################################
+training:
+  # Parameters
+  dataset: 'bloodmnist'  # Which dataset to use: ['bloodmnist', 'breastmnist', 'chestmnist', 'dermamnist', 'octmnist', 'organamnist', 'organcmnist', 'organsmnist', 'pathmnist', 'pneumoniamnist', 'retinamnist', 'tissuemnist']
+  data_path: '../bloodmnist.npz'  # Where the dataset is stored: ['../bloodmnist.npz', '../breastmnist.npz', '../chestmnist.npz', '../dermamnist.npz', '../octmnist.npz', '../organamnist.npz', '../organcmnist.npz', '../organsmnist.npz', '../pathmnist.npz', '../pneumoniamnist.npz', '../retinamnist.npz', '../tissuemnist.npz']
+  output_path: '../checkpoints/training'  # Parent directory to where the trained model shall be stored.
+  fold: '0'  # Which fold to exclude from training and use for testing.
+  resume_training: # Whether to resume the training from a given checkpoint.
+    resume: False  # Whether to load the checkpoint or not.
+    wandb_id: 'xxx'  # wandb ID of the run to resume.
+  seed: 1333  # Seed for random operations for reproducibility.
+  device: 'cuda:0'  # Which device to run the computations on.
+  hp_optimization: False  # Whether hyperparameter optimization is active.
+
+  # Hyperparameters
+  starting_epoch: 0  # Which epoch to start from.
+  epochs: 1000  # How many epochs to train for.
+  image_dim: # Input dimension of the images.
+    height: 28
+    width: 28
+    channel: 3
+  feature_dim: 256  # Feature dimension of latent space.
+  batch_size: 64  # Batch size for the training.
+  tuple_size: 4  # Tuple size for Barlow Tuple.
+  optimizer: # Optimizer
+    optimizer: 'adam'
+    learning_rate: 0.0001
+    first_momentum: 0.95
+    second_momentum: 0.999
+    scheduler: # Learning rate scheduler
+      base_lr: 0.0001
+      max_lr: 0.01
+      step_up: 2000
+  dropout: 0.0  # Dropout rate.
+
+# ######################################
+# Parameter and hyperparameter configurations for inference
+# ######################################
+inference:
+  # Parameters
+  dataset: 'bloodmnist'  # Which dataset to use: ['bloodmnist', 'breastmnist', 'chestmnist', 'dermamnist', 'octmnist', 'organamnist', 'organcmnist', 'organsmnist', 'pathmnist', 'pneumoniamnist', 'retinamnist', 'tissuemnist']
+  data_path: '../bloodmnist.npz'  # Where the dataset is stored: ['../bloodmnist.npz', '../breastmnist.npz', '../chestmnist.npz', '../dermamnist.npz', '../octmnist.npz', '../organamnist.npz', '../organcmnist.npz', '../organsmnist.npz', '../pathmnist.npz', '../pneumoniamnist.npz', '../retinamnist.npz', '../tissuemnist.npz']
+  input_path: '../checkpoints/training'  # Parent directory to where the trained encoder is stored.
+  output_path: '../output/training'  # Parent directory to where the trained model shall be stored.
+  fold: '0'  # Which fold to exclude from training and use for testing.
+  seed: 1333  # Seed for random operations for reproducibility.
+  device: 'cuda:0'  # Which device to run the computations on.
+
+  # Hyperparameters
+  image_dim: # Input dimension of the images.
+    height: 28
+    width: 28
+    channel: 3
+  feature_dim: 256  # Feature dimension of latent space.
+  batch_size: 512  # Batch size for the training.
+  dropout: 0.0  # Dropout rate.

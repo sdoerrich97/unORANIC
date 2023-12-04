@@ -1,0 +1,25 @@
+# unORANIC: Unsupervised orthogonalization of anatomy and image-characteristic features
+# Parameter and hyperparameter configurations for the anatomy robustness experiment
+
+# ######################################
+# Parameter and hyperparameter configurations for the robustness experiment
+# ######################################
+# Parameters
+dataset: 'bloodmnist'  # Which dataset to use: ['bloodmnist', 'breastmnist', 'chestmnist', 'dermamnist', 'octmnist', 'organamnist', 'organcmnist', 'organsmnist', 'pathmnist', 'pneumoniamnist', 'retinamnist', 'tissuemnist']
+data_path: '../bloodmnist.npz'  # Where the dataset is stored: ['../bloodmnist.npz', '../breastmnist.npz', '../chestmnist.npz', '../dermamnist.npz', '../octmnist.npz', '../organamnist.npz', '../organcmnist.npz', '../organsmnist.npz', '../pathmnist.npz', '../pneumoniamnist.npz', '../retinamnist.npz', '../tissuemnist.npz']
+input_path: '../checkpoints/experiments/anatomy/classification'   # Parent directory to where the trained anatomical encoder is stored.
+output_path: '../output/experiments/anatomy/robustness'  # Parent directory to where the experiment output shall be stored.
+architecture: 'unoranic'  # Which trained encoder to use.
+fold: '0'  # Which fold to use for testing (['0', '1', '2', '3', '4']).
+seed: 1333  # Seed for random operations for reproducibility.
+device: 'cuda:1'  # Which device to run the computations on.
+
+# Hyperparameters
+image_dim: # Input dimension of the images.
+  height: 28
+  width: 28
+  channel: 3
+feature_dim: 256  # Feature dimension of latent space.
+task: 'multi-class'  # Task of the current dataset
+nr_classes: 8  # For which learning strategy to load the data for.
+dropout: 0.0  # Dropout rate.
