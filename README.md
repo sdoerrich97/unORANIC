@@ -6,10 +6,7 @@ In recent years, deep learning algorithms have shown promise in medical image an
 
 ![approach_anim](https://github.com/sdoerrich97/unORANIC/assets/98497332/af2f5f2a-92c2-42a5-8013-c156ae5ce69b)
 
-![approach_anim](https://github.com/sdoerrich97/unORANIC/assets/98497332/1c636d39-9e38-423b-a0d8-a96e16e2b14e)
-
-![approach_anim](https://github.com/sdoerrich97/unORANIC/assets/98497332/ad5f9408-b8f3-4a2c-85af-322e57501689)
-
+![approach_anim](https://github.com/sdoerrich97/unORANIC/assets/98497332/d11ff430-076e-4eb3-a5dd-fbf296a8ae51)
 
 ## Key Features
 - **Unsupervised Orthogonalization**: unORANIC employs a novel loss function to facilitate the orthogonalization of anatomy and image-characteristic features, resulting in improved generalization and robustness.
