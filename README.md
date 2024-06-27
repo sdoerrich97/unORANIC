@@ -4,8 +4,6 @@ This repository contains the code and resources for the paper titled ["unORANIC:
 ## Overview
 In recent years, deep learning algorithms have shown promise in medical image analysis, including segmentation, classification, and anomaly detection. However, their adoption in clinical practice is hindered by challenges arising from domain shifts and variations in imaging parameters, corruption artifacts, and more. To tackle these challenges, the paper introduces unORANIC, which focuses on orthogonalizing anatomy and image-characteristic features in an unsupervised manner.
 
-![approach_anim](https://github.com/sdoerrich97/unORANIC/assets/98497332/af2f5f2a-92c2-42a5-8013-c156ae5ce69b)
-
 ![approach_anim](https://github.com/sdoerrich97/unORANIC/assets/98497332/d11ff430-076e-4eb3-a5dd-fbf296a8ae51)
 
 ## Key Features
